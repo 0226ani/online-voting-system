@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<title>Responsive Login Page</title>
+		<link rel="stylesheet" href="loginform.css">
+		<link rel="stylesheet" href="loginform1.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+		<script type="text/javascript" src="loginform.js"></script>
+	</head>
+	<body class="etc">
+		<nav>
+        <label class="logo">STUDENT UNION</label>
+        <ul>
+        <b><li><a  href="FRONT.html">HOME</a></li></b>
+        <b><li><a href="#">ABOUT</a></li></b>
+        <b><li><a href="can.html">CANDIDATES</a></li></b>
+        <b><li><a class="active" href="loginform.html">LOGIN/VOTE</a></li></b>
+        </ul>
+         </nav>
+		<!--form area start-->
+		<div class="form">
+			<!--login form start-->
+			<form class="login-form" action="#" method="POST" >
+				<input class="user-input" type="text" name="USER_NAME" placeholder="Username" required>
+				<input class="user-input" type="password" name="PASS_WORD" placeholder="Password" required>
+				<div class="options-01">
+					<a href="#">Forgot your password?</a>
+				</div>
+				<input class="btn" type="submit" name="" value="LOGIN" >
+				<div class="options-02">
+					<p>Not Registered? <a href="#">Create an Account</a></p>
+				</div>
+			</form>
+			<!--login form end-->
+			<!--signup form start-->
+			<form class="signup-form" action="#" method="POST" >
+				
+				<input class="user-input" id="nameText" type="text" name="USER_NAME" placeholder="Username" required onchange="check()">
+				<input class="user-input" id="emailText" type="email" name="EMAIL" placeholder="Email Address" required onchange="">
+				<input class="user-input" id="passwordType" type="password" name="PASS_WORD" placeholder="Password" required onchange="pwdLength()">
+				<input class="user-input" id="passwordTypeConfrim" type="password" name="PASS_WORD1" placeholder="Re-Enter the Password" required  onchange="pwd1Length()">
+				<input class="btn" type="submit" name="" value="SIGN UP" onclick="pwdEquals()">
+				
+				<div class="options-02">
+					<p>Already Registered? <a href="#">Sign In</a></p>
+				</div>
+			</form >
+			<!--signup form end-->
+		</div>
+		<!--form area end-->
+
+		<script type="text/javascript">
+		$('.options-02 a').click(function(){
+			$('form').animate({
+				height: "toggle", opacity: "toggle"
+			}, "medium");
+		});
+		</script>
+
+	</body >
+</html>

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    background-image: url(./person.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.etc {
+    background-attachment: fixed;
+}
+
+.des {
+    width: auto;
+    height: auto;
+    border: solid black;
+    margin: auto;
+    font-style: italic;
+    font-size: 35px;
+    margin-top: auto;
+}
+
+.form {
+    position: absolute;
+    width: 320px;
+    align-self: center;
+    float: right;
+    margin-top: 80px;
+    margin-left: 550px;
+}
+
+.form i {
+    z-index: 1;
+    color: rgba(52, 206, 52, 0.952);
+    font-size: 100px;
+    margin: 10px;
+}
+
+.form .signup-form {
+    display: none;
+}
+
+.form .user-input {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(1, 1, 1, 1);
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.5s;
+    transition-property: border-left, border-right, box-shadow;
+}
+
+.form .user-input:hover,
+.form .user-input:active {
+    border-left: solid 2px #4285F4;
+    border-right: solid 2px #4285F4;
+}
+
+.form .options-01 input {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.form .options-01 a {
+    color: rgb(100, 14, 212);
+    font-size: 14px;
+    font-style: italic;
+    float: right;
+}
+
+.form .btn {
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 55px;
+    background:red;
+    color: #ffff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition-property: border-left, border-right;
+}
+
+.form .btn:hover {
+    border-left: solid 4px rgba(100, 255, 255, 0.5);
+    border-right: solid 4px rgba(100, 255, 255, 0.5);
+}
+
+.form .options-02 {
+    color: rgba(1, 1, 1, 1);
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.form .options-02 a {
+    color: rgb(34, 47, 233);
+}
+
+
+/* Responsive CSS */
+
+@media screen and (max-width: 500px) {
+    .form {
+        width: 95%;
+    }
+    .form .user-input {
+        width: 100%
+    }
+    .form .btn {
+        width: 100%;
+    }
+}

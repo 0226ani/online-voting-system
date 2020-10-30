@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    list-style: border-box;
+}
+body{
+    background: url(./person.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    background:red;
+    height:100px;
+    width: 1350px;
+}
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right:20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background:white;
+    transition: 5s;
+}
+nav div img{
+    float: right;
+}
+nav div img{
+    width: 250px;
+    height: 250px;
+    padding:15px 0;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+
+.welcome-text{
+    position:center;
+    
+    height: 60px;
+    margin: 8% 10%;
+    text-align:right;
+}
+.welcome-text h1{
+    text-align:left;
+    color:red;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text h2{
+    text-align:left;
+    color:white;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text h3{
+    text-align:left;
+    color:red;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text h4{
+    text-align:left;
+    color:wheat;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+
